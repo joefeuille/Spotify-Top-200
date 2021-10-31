@@ -19,12 +19,12 @@
 *	Spotify API Reference Notes - [https://developer.spotify.com/documentation/web-api/reference/#/]
 
 
-###Choosing the Data
+### Choosing the Data
 
 I chose this data because music has always fascinated me and I wanted a chance to learn how to call data through an API. When I learned about Spotify’s unique (and strange) classification system for each song, I wanted a chance to analyze commonalities between audio features. Analyzing data for eight countries over ten weeks should also give me a chance to see whether location, culture, or language play parts in how users choose their favorite songs.
 
 
-###Track Information
+### Track Information
 
 Spotify keeps meticulous records for each song in their library. For this analysis, I’ll be using the following track information:
 *	**Artists** - The artists who performed the track. Each artist object includes a link in href to more detailed information about the artist.
@@ -36,7 +36,7 @@ Spotify keeps meticulous records for each song in their library. For this analys
 * **Popularity** - The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past. Duplicate tracks (e.g. the same track from a single and an album) are rated independently. Artist and album popularity is derived mathematically from track popularity. Note that the popularity value may lag actual popularity by a few days: the value is not updated in real time.  (Integer)
 
 
-###Audio Features
+### Audio Features
 
 Spotify uses their Audio Features as an in-house classification system upon which they base their predictive algorithms to recommend new music to their listeners. This classification system includes the following variables:
 * **Acousticness** - A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic. (Float)
@@ -55,18 +55,18 @@ Spotify uses their Audio Features as an in-house classification system upon whic
 * **Valence** - A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
 
 
-###Limitations
+### Limitations
 
 While this data is trustworthy because it’s coming directly from Spotify, it’s important to remember that this only applies to Spotify. Spotify is a leader in the music streaming market and their data might be reflective of that entire country, but it’s also possible that another streaming service might attract users with different preferences. For instance, Apple Music might have different songs in their Top 200 list for the same countries in the same week.
 
 
-###Ethical Concerns
+### Ethical Concerns
 
 Because Spotify’s API doesn’t allow me to access any user-specific data, the entirety of this analysis concerns national trends in listening preferences. As such, there are not any substantial ethical concerns.
 
 **Note:** It’s always important to understand that this is analysis is representative of a subset of all of Spotify’s users in each country. Therefore, it would be incorrect to stereotype every citizen of a country according to the data found in this analysis. For example, just because Justin Bieber was featured on a song which held a place in the Top 10 songs played in the United States for ten weeks, that doesn’t mean that everyone in the country loves Justin Bieber. I, for one, am not a fan.
 
-###Key Questions
+### Key Questions
 * What bands are most popular in each country? Can we identify cultural preferences for popular music in each country?
 * Which bands transcend those country preferences and have a global appeal?
 * What qualities (audio features) make a song popular on a global level? What qualities make a song popular in each country?
